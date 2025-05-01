@@ -1,9 +1,10 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
     <>
-    <h1>Redux ToolKit</h1>
+    <NavBar/>
     </>
   )
 }
