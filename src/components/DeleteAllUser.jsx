@@ -1,7 +1,14 @@
+import { useDispatch } from "react-redux";
+import { clearUsers } from "../store/slices/UserSlice";
+
 const DeleteAllUser = () => {
+  const dispatch = useDispatch();
+  const clearAllUser = () => {
+    dispatch(clearUsers())
+  }
   return (
     <>
-      <div>DeleteAllUser</div>
+      <div onClick={() => clearAllUser()}>DeleteAllUser</div>
     </>
   );
 };
