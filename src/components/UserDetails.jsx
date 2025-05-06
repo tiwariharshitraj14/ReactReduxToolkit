@@ -8,7 +8,6 @@ import DisplayUsers from "./DisplayUsers";
 const UserDetails = () => {
   const dispatch = useDispatch();
   const addNewUser = (payload) => {
-    // console.log(payload);
     dispatch(addUser(payload))
   };
 
